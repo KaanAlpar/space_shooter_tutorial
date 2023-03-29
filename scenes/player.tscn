@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_pl1ct"]
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
+collision_mask = 2
 motion_mode = 1
 script = ExtResource("1_pl1ct")
 

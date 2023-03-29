@@ -8,6 +8,8 @@ radius = 3.0
 height = 44.0
 
 [node name="Laser" type="Area2D"]
+collision_layer = 4
+collision_mask = 2
 script = ExtResource("1_4v2y7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -23,4 +25,5 @@ shape = SubResource("CapsuleShape2D_nnupo")
 position = Vector2(0, 11)
 scale = Vector2(0.4, 0.3)
 
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
