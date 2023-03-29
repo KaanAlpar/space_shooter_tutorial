@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmbeb4icp71di"]
+
+[ext_resource type="PackedScene" uid="uid://cm23pqetbflrq" path="res://scenes/enemy.tscn" id="1_e8eha"]
+[ext_resource type="Texture2D" uid="uid://3cpyfbyh7kj7" path="res://assets/textures/spaceShips_004.png" id="2_xwoqn"]
+
+[node name="DiverEnemy" instance=ExtResource("1_e8eha")]
+speed = 400
+hp = 1
+
+[node name="Sprite" parent="." index="0"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_xwoqn")
